@@ -95,10 +95,16 @@ export default function PortfolioClient() {
 
           <nav className="flex items-center gap-5 text-sm text-[#334155]">
             <a
+              href="#pillars"
+              className="hidden sm:inline-block hover:text-[#4F46E5] transition-colors"
+            >
+              核心專業
+            </a>
+            <a
               href="#flagships"
               className="hidden sm:inline-block hover:text-[#4F46E5] transition-colors"
             >
-              旗艦代表作
+              精選代表作
             </a>
             <a
               href="#index"
@@ -110,9 +116,9 @@ export default function PortfolioClient() {
               href="https://jerrydev.tw"
               target="_blank"
               rel="noreferrer"
-              className="hidden sm:inline-block hover:text-[#4F46E5] transition-colors"
+              className="hidden md:inline-block hover:text-[#4F46E5] transition-colors"
             >
-              程式教學站
+              jerrydev.tw
             </a>
             <a
               href="https://github.com/iiiplay"
@@ -131,36 +137,102 @@ export default function PortfolioClient() {
         {/* Hero Section */}
         <section className="border-b border-[#DFE3ED] bg-white">
           <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
-            <div className="max-w-3xl">
+            <div className="max-w-4xl">
               <p className="mb-3 text-sm font-semibold text-[#4F46E5]">
-                Hi，我是 Jerry 👋
+                Hi，我是 Jerry · 系統架構師 &amp; 技術講師
               </p>
               <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#0F172A] leading-tight">
-                工控系統架構 ×{" "}
-                <span className="text-[#4F46E5]">AI 實戰開發</span>
-                <br />
-                個人作品集與數位產品索引
+                AI 系統工程 × 技術教學 ×{" "}
+                <span className="text-[#4F46E5]">
+                  系統分析與 PLC 工控軟體開發
+                </span>
               </h1>
-              <p className="mt-4 text-base sm:text-lg text-[#334155] leading-relaxed">
-                累積 20 年工控與軟體系統架構經驗，把想法一步步做成網頁遊戲、自研 2D 引擎、實用 Web App 與系統化程式教學資源。這裡彙整了近一年精選的作品與開源專案。
+              <p className="mt-5 text-base sm:text-lg text-[#334155] leading-relaxed">
+                累積 20 年工控與系統分析實戰底蘊（C# / .NET、PLC 設備通訊與高可靠度控制軟體），結合現代 AI 多 Agent 工程落地與系統化程式教學（jerrydev.tw），專注把複雜技術轉化為可穩定運轉、可交付的真實產品。
               </p>
+              <div className="mt-7 flex flex-wrap items-center gap-3">
+                <a
+                  href="#pillars"
+                  className="inline-flex items-center gap-2 rounded-xl bg-[#4F46E5] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4338CA] transition-colors"
+                >
+                  認識三大核心專業
+                </a>
+                <a
+                  href="#flagships"
+                  className="inline-flex items-center gap-2 rounded-xl border border-[#DFE3ED] bg-[#F6F7FB] px-5 py-2.5 text-sm font-semibold text-[#0F172A] hover:border-[#4F46E5]/40 hover:bg-[#EEF2FF] transition-colors"
+                >
+                  瀏覽精選代表作
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Core Expertise Pillars */}
+        <section id="pillars" className="border-b border-[#DFE3ED] bg-[#F6F7FB] py-12 sm:py-14">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-7">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#0F172A] tracking-tight">
+                三大核心專業支柱
+              </h2>
+              <p className="text-sm text-[#5B6478] mt-1">
+                從底層設備控制、系統分析到 AI 應用與技術傳承的完整工程能力
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <div className="rounded-2xl border border-[#DFE3ED] bg-white p-6">
+                <div className="inline-flex items-center rounded-full border border-[#BFDBFE] bg-[#EFF6FF] px-3 py-1 text-xs font-semibold text-[#1E40AF] mb-4">
+                  01 · System Analysis &amp; PLC Software
+                </div>
+                <h3 className="text-lg font-bold text-[#0F172A]">
+                  系統分析與 PLC 工控軟體開發
+                </h3>
+                <p className="mt-2.5 text-sm text-[#334155] leading-relaxed">
+                  20 年設備自動化與工業控制軟體架構經驗，涵蓋 C# / .NET、PLC 通訊協議整合、機台狀態機設計、例外安全防線與產線實機交付。
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-[#DFE3ED] bg-white p-6">
+                <div className="inline-flex items-center rounded-full border border-[#DDD6FE] bg-[#F5F3FF] px-3 py-1 text-xs font-semibold text-[#5B21B6] mb-4">
+                  02 · AI Engineering &amp; Multi-Agent
+                </div>
+                <h3 className="text-lg font-bold text-[#0F172A]">
+                  AI 系統工程與多 Agent 協作
+                </h3>
+                <p className="mt-2.5 text-sm text-[#334155] leading-relaxed">
+                  建置多 Agent 開發看板、本地端 STT/LLM/TTS 語音系統與 AI 顧問後端，並以一人公司模式完成多個從 0 到 1 的產品上線。
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-[#DFE3ED] bg-white p-6">
+                <div className="inline-flex items-center rounded-full border border-[#FDE68A] bg-[#FFFBEB] px-3 py-1 text-xs font-semibold text-[#92400E] mb-4">
+                  03 · Technical Education &amp; Web
+                </div>
+                <h3 className="text-lg font-bold text-[#0F172A]">
+                  技術教學與全棧產品實踐
+                </h3>
+                <p className="mt-2.5 text-sm text-[#334155] leading-relaxed">
+                  長期於聯成電腦教授 Python、C# 與 Web 開發，打造 jerrydev.tw 教學資源站與 40+ 章實戰教材，並開發多款跨平台 Web App 與遊戲。
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Trust Stats Bar */}
-        <section className="border-b border-[#DFE3ED] bg-[#F6F7FB]">
+        <section className="border-b border-[#DFE3ED] bg-white">
           <div className="mx-auto max-w-7xl px-4 py-7 sm:px-6 lg:px-8">
             <dl className="grid grid-cols-2 gap-4 sm:grid-cols-4">
               {[
+                { value: "20+ 年", label: "系統分析與工控底蘊" },
                 { value: `${PROJECTS.length}`, label: "精選收錄作品" },
-                { value: `${flagships.length}`, label: "旗艦代表作" },
                 { value: `${publicCount}`, label: "開源 Public Repo" },
-                { value: "4", label: "核心技術領域" },
+                { value: "40+ 章", label: "系統化程式教材" },
               ].map((stat) => (
                 <div
                   key={stat.label}
-                  className="rounded-xl border border-[#DFE3ED] bg-white px-5 py-4"
+                  className="rounded-xl border border-[#DFE3ED] bg-[#F6F7FB] px-5 py-4"
                 >
                   <dt className="text-xs font-medium text-[#5B6478]">
                     {stat.label}

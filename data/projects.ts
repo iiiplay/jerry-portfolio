@@ -301,7 +301,7 @@ export const PROJECTS: ProjectItem[] = [
       "提供公開 Demo 版本（kotoba-forge-demo）供體驗",
     ],
     stack: ["TypeScript", "Vite", "PWA", "Tailwind CSS"],
-    githubUrl: "https://github.com/17app001/kotoba-forge-demo",
+    githubUrl: "https://github.com/iiiplay/kotoba-forge-demo",
     year: "2026",
   },
   {
@@ -418,7 +418,7 @@ export const PROJECTS: ProjectItem[] = [
       "純淨零依賴架構，任務狀態直接落盤為可讀 Markdown",
     ],
     stack: ["Node.js", "Vanilla JS", "Markdown", "Multi-Agent"],
-    githubUrl: "https://github.com/17app001/multi-agent-workboard",
+    githubUrl: "https://github.com/iiiplay/multi-agent-workboard",
     year: "2026",
   },
   {
@@ -436,7 +436,7 @@ export const PROJECTS: ProjectItem[] = [
       "可完全於本地端硬體運行，保障資料隱私",
     ],
     stack: ["Python", "Local LLM", "Voice AI", "Open Source"],
-    githubUrl: "https://github.com/17app001/speech-to-speech",
+    githubUrl: "https://github.com/iiiplay/speech-to-speech",
     year: "2026",
   },
 
@@ -444,7 +444,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: "jerrydev",
     title: "Jerry 老師程式教學資源站",
-    subtitle: "Python / C# / Web 課程教材與下載中心",
+    subtitle: "jerrydev.tw · Python / C# / Web 課程教材與下載中心",
     category: "teaching",
     tier: "flagship",
     visibility: "private",
@@ -456,6 +456,7 @@ export const PROJECTS: ProjectItem[] = [
       "收錄 40 章以上系統化程式課程簡報與實戰範例",
     ],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel", "Automation"],
+    liveUrl: "https://jerrydev.tw",
     year: "2026",
   },
   {
@@ -473,7 +474,7 @@ export const PROJECTS: ProjectItem[] = [
       "作為課堂資料分析與爬蟲綜合實戰標竿",
     ],
     stack: ["Python", "Pandas", "Data Visualization", "Web Scraping"],
-    githubUrl: "https://github.com/17app001/python-job-dashboard",
+    githubUrl: "https://github.com/iiiplay/python-job-dashboard",
     year: "2026",
   },
   {
